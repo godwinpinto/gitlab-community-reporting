@@ -1,0 +1,23 @@
+etl/target/
+etl/!.mvn/wrapper/maven-wrapper.jar
+etl/!**/src/main/**/target/
+etl/!**/src/test/**/target/
+
+### STS ###
+etl/.apt_generated
+etl/.classpath
+etl/.factorypath
+etl/.project
+etl/.settings
+etl/.springBeans
+etl/.sts4-cache
+
+### IntelliJ IDEA ###
+etl/.idea
+etl/*.iws
+etl/*.iml
+etl/*.ipr
+
+### VS Code ###
+etl/.vscode/
+.vscode/
