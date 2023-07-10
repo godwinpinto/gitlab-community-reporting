@@ -1,0 +1,33 @@
+spring:
+  autoconfigure:
+    exclude:
+    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+  #Your MongoDB configuration
+  data:
+    mongodb:
+      uri: mongodb+srv://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_URL}/?retryWrites=true&w=majority
+      database: ${MONGODB_NAME}
+  #Setting max buffer for reactive webclient
+  codec:
+    max-in-memory-size: 20MB
+
+  #Datasource to store Spring job related properties. You may modify this to permanently store information in a database like MySQL, etc
+  datasource:
+    url: jdbc:h2:file:../../DB
+  batch:
+    job:
+      #allow batch to run at startup
+      enabled: true
+    jdbc:
+      initialize-schema: always
+
+# Below is the gitlab server related configuration
+gitlab:
+  url:
+    base: ${GITLAB_API_URL}
+  token: ${GITLAB_TOKEN}
+
+logging:
+  level:
+    root: INFO
