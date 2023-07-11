@@ -14,7 +14,7 @@ https://devpost.com/software/gitlab-ce-on-steriods-with-mongodb-atlas-and-google
 ```shell
 export GITLAB_API_URL=<YOUR GITLAB URL>
 export GITLAB_TOKEN=<YOUR GITLAB TOKEN>
-export MONGODB_URL=<YOUR MONGODB URL>
+export MONGODB_URL=<YOUR MONGODB HOST URL>
 export MONGODB_USER=<YOUR MONGODB USERNAME>
 export MONGODB_PASSWORD=<YOUR MONGODB PASSWORD>
 export MONGODB_NAME=<YOUR MONGODB DATABASE NAME>
